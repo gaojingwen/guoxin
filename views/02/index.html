@@ -1,0 +1,23 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="cms_02" ng-controller="homeController">
+    <div class="logo"></div>
+    <div class="header">基础知识</div>
+    <ul>
+        <li ng-click="bodyRouter_02()">证券基础知识</li>
+        <li ng-click="bodyRouter_02()">期货及衍生品知识</li>
+        <li ng-click="bodyRouter_02()">并购知多少</li>
+    </ul>
+    <div class="footer">
+        <div class="back" onclick="history.go(-1)"></div>
+        <div class="home" onclick="location.href='/'"></div>
+    </div>
+</div>
+{% endblock %}

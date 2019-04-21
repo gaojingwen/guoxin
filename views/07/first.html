@@ -1,0 +1,24 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="cms_08" ng-controller="homeController">
+    <div class="logo"></div>
+    <div class="content">
+        <div class="top">尊敬的投资者：</div>
+        <div class="body">
+            您好！为切实做好投资者保护与教育工作，进一步了解投资
+            者对投资者教育基地（实体）的需求，同时完善我们日后的投教
+            工作。现特邀您参与我们的满意度调查，对此向您表示衷心的
+            感谢。我们承诺所收集的数据只用于投教基地改进使用，并对
+            您的信息进行严格保密。
+        </div>
+        <div class="btn">立即测评</div>
+    </div>
+</div>
+{% endblock %}

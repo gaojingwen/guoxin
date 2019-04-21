@@ -1,0 +1,24 @@
+{
+  "name": "CerLiveRoom",
+  "description": "",
+  "main": "",
+  "authors": [
+    "lb"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.9",
+    "jquery": "~1.11.3",
+    "jquery.cookie": "~1.4.1",
+    "moment": "~2.11.2"
+  }
+}

@@ -1,0 +1,45 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="cms_07" ng-controller="homeController">
+    <div class="logo"></div>
+    <div class="ask">
+        <div class="con">
+            <div class="question">
+                1、您认为投教基地一下哪些区域UI有特色 （）
+            </div>
+            <div class="select">
+                <p><input type="checkbox" value="" ng-model="aaa" ng-checked="aaa"><i ng-class="aaa?'on':''"></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+                <p><input type="checkbox" value=""><i></i><span>历史回顾去</span></p>
+            </div>
+            <div class="next">下一题</div>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="cover-con">
+            <p>本题还未作答， 确定跳过？</p>
+            <div class="btn1">继续作答</div>
+            <div class="btn2">跳过</div>
+        </div>
+    </div>
+    <div class="cover2">
+        <div class="cover-con">
+            <p>是否放弃测评？</p>
+            <div class="btn1">否</div>
+            <div class="btn2">是</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

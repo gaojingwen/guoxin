@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/javascripts/lib/angularjs/angular.min.js"></script>
+    <script src='/javascripts/controllers/main-controller.js' type="text/javascript"></script>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 1920) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    {% block header %}{% endblock %}
+</head>
+<body ng-controller="mainController">
+{% block body %}{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

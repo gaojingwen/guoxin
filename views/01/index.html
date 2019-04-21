@@ -1,0 +1,30 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="cms_01" ng-controller="homeController">
+    <div class="logo"></div>
+    <div class="header">法律法规</div>
+    <ul>
+        <li ng-click="bodyRouter_01()"><i>01</i>法律法规</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>基础知识</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>适当管理性</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>风险警示</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>国信课堂</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>基地风采</li>
+        <li ng-click="bodyRouter_01()"><i>01</i>意见征集</li>
+    </ul>
+    <div class="footer">
+        <div class="pre">上一页</div>
+        <div class="number"><i>1</i>/<i>2</i></div>
+        <div class="next">下一页</div>
+        <div class="back" onclick="history.go(-1)"></div>
+        <div class="home" onclick="location.href='/'"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="cms_01" ng-controller="homeController">
+    <div class="logo"></div>
+
+    <div class="footer">
+        <div class="back" onclick="history.go(-1)"></div>
+    </div>
+    <div class="pop">
+        <div class="pop-con">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

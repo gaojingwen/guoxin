@@ -1,0 +1,22 @@
+{% extends 'layout/default.html' %}
+
+{% block title%}{% endblock %}
+
+{% block header%}
+<script src="/javascripts/controllers/home-controller.js"></script>
+{% endblock %}
+
+{% block body%}
+<div id="index" ng-controller="homeController">
+    <div class="logo"></div>
+    <ul>
+        <li ng-click="router(1)">法律法规</li>
+        <li ng-click="router(2)">基础知识</li>
+        <li ng-click="router(3)">适当管理性</li>
+        <li ng-click="router(4)">风险警示</li>
+        <li ng-click="router(5)">国信课堂</li>
+        <li ng-click="router(6)">基地风采</li>
+        <li ng-click="router(7)">意见征集</li>
+    </ul>
+</div>
+{% endblock %}
